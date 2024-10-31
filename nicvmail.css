@@ -1,0 +1,115 @@
+.nicvmail-modal{
+	position: fixed;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.nicvmail-modal:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.nicvmail-modal > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	/*padding: 5px 20px 13px 20px;*/
+	padding: 20px;
+	border-radius: 5px;
+	background: #fff;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+/*.nicvmail-response p{color: red;}*/
+.nicvmail-modal > div h2{font-size: 1.5em; margin: 10px 0 0 0;}
+.nicvmail-close {
+	background: #999;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+}
+.nicvmail-close:hover { background: #666; }
+.nicv-mail-text{font-size: 0.9em; max-width: 100%; margin-top: 10px; text-align:left;}
+.nicv-mail-center {margin: 0 auto;width: 50%;}
+.nicv-link-mail{font-weight: bold;color: black;}
+.nicv-link-mail:hover{text-decoration: underline;}
+#mittente, #replyto{width:49%;border: 1px solid #ccc;padding:10px 0 10px 10px;display: inline-block;}
+#msg{width: 98%;border: 1px solid #ccc;padding:10px 0 10px 10px;}
+#mittente, #replyto, #msg, #bottone{font-size:15px;}
+#msg {height: 100px;}
+label{font-size:14px;}
+img.codice{/*float:left;*/ width: 20%; margin-bottom: -13px;}
+#nicaptcha{width: 61%; /*float:right;*/ padding: 10px;font-size:15px;}
+#bottone{margin-left:4%; float: right; padding: 10px;}
+#bottone{margin-top: -40px;border-radius:5px;width:20%;margin-bottom:10px;}
+a {color: #666;}
+a:hover {color: #000; text-decoration: none;}
+
+
+@media (min-width: 1200px) {
+
+	/* Structure > 1200px */
+	
+	 
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+	/* Structure 768 to 1200 */
+    img.codice{/*float:left;*/ width: 30%; margin-bottom: -30px;padding:20px;}
+    .nicv-scheda-col{width:98%}
+    #nichaptcha{width:40%;}
+	
+
+}
+
+
+@media (max-width: 767px) {
+
+	/* Structure  < 767 */
+    img.codice{/*float:left;*/ width: 60%; margin-bottom: -10px;padding:20px;}
+    #bottone{border-radius:5px;width:35%;margin-bottom:10px;}
+	
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 300px) and (max-width : 480px) {
+/* Styles */
+
+	.nicvmail-modal > div {
+	width: 280px;
+	position: relative;
+	margin: 10% auto;
+	/*padding: 5px 20px 13px 20px;
+	border-radius: 5px;
+	background: #fff;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;*/
+	}
+	.nicvmail-modal > div h2{font-size: 1.150em; }
+    img.codice{/*float:left;*/ width: 80%; margin-bottom: -10px;padding:10px;}
+    #nicaptcha{width:90%;}
+	
+}
